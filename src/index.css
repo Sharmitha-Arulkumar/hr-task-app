@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-500: #7b5cff;
+  --color-brand-600: #6949ff;
+  --color-brand-700: #5e3be8;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Custom utility for smooth modal slide-up */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
